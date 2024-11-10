@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- Adicione uma classe à imagem -->
+    <img class="logo" alt="Vue logo" src="./assets/logo-teatro.jpg">
+    <MapComponent msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MapComponent from './components/MapComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MapComponent
   }
 }
 </script>
@@ -24,5 +25,12 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.logo {
+  width: 140px; /* Ajusta o tamanho da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Faz a imagem se comportar como bloco */
+  margin: 0 auto; /* Centraliza horizontalmente */
 }
 </style>
